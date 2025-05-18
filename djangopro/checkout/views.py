@@ -62,7 +62,7 @@ def Payment(request):
 
 def invoice(request):
     data = datetime.now()
-    total =0.00000
+    total =0.000000
     cart = request.session.get('cart', None)
     values= (list(cart.values()))
     for i in values:
